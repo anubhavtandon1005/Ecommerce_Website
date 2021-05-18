@@ -64,7 +64,7 @@ $('#trackerForm').submit(function(event) {
                 </li>`
                     $('#items').append(mystr);
                 }
-                 // Fill in the order details
+            
                 cart = JSON.parse(data['itemJson']);
                 console.log(cart);
                 for (item in cart) {

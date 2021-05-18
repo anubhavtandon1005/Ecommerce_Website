@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>{% block title%} {% endblock %}</title>
@@ -18,7 +18,7 @@
   
     <body style="background-color: #f6a76f59 ;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/shop">My Cart</a>
+  <a class="navbar-brand" href="/shop">AG_Cart</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -47,10 +47,12 @@
     <form method="get" action="/shop/search/" class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
       <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+      <a href="/admin" role="button" target="_blank" class="btn btn-outline-success m-2 my-sm-0"><i class="fa fa-user"  aria-hidden="true" style="font-size:20px;" ></i> Admin </a>
+
     </form>
 
-  <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
-        sagittis lacus vel augue laoreet rutrum faucibus.">
+    <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
+    sagittis lacus vel augue laoreet rutrum faucibus.">
         
         
         <i class="fa fa-cart-plus" aria-hidden="true" style="font-size:30px;"></i> Cart(<span id="cart">0</span>)
@@ -65,8 +67,7 @@
 
   {% endblock %}
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
@@ -75,3 +76,8 @@
     {% block js %} {% endblock %}
   </body>
 </html>
+
+
+
+
+
